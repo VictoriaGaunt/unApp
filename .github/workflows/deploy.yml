@@ -27,7 +27,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      # 5) Публикуем содержимое dist/ в ветку gh-pages
+      # 5) Публикуем содержимое dist/ в ветку main
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-main@v3
         with:
