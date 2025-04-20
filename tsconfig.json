@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "composite": true,
+    "types": ["jest"],
+    "strict": true,
+    "target": "es5",
+    "lib": ["dom", "es2015"],
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "allowUnreachableCode": false,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noErrorTruncation": true,
+    "alwaysStrict": true,
+    "noImplicitThis": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.vue",
+    "types/**/*",
+    "src/**/*.js",
+    "src/**/*.json",
+    "src/**/*.jsx",
+    "src/**/*.tsx"
+  ],
+  "exclude": ["node_modules"],
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
