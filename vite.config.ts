@@ -5,6 +5,7 @@ import ui from '@nuxt/ui/vite';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/unApp/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
