@@ -1,8 +1,11 @@
 import axios from 'axios';
 import { IUser } from '../models/User.types';
 
-const API_BASE_URL = 'https://api.example.com/users'; // Измените URL на реальный
-
+const api = axios.create({
+    baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3000/api',
+    timeout: 10000,
+    withCredentials: true,
+});
 export async function getUser(id: number): Promise<IUser> {
     const response = await axios.get(`${API_BASE_URL}/${id}`);
     return response.data;
@@ -21,3 +24,4 @@ export async function updateUserApi(id: number, user: Partial<IUser>): Promise<I
 export async function deleteUserApi(id: number): Promise<void> {
     await axios.delete(`${API_BASE_URL}/${id}`);
 }
+export default api;

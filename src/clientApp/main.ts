@@ -31,3 +31,6 @@ app.use(i18n);
 app.use(ui);
 setGlobalErrorHandler(app);
 createApp(App).mount('#app')
+document.addEventListener('contextmenu', (event) => {
+    event.preventDefault();
+});

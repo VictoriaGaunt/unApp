@@ -1,0 +1,1 @@
+export const authBanner = require('./auth-banner.png');

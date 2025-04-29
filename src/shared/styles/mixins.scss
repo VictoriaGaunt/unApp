@@ -1,0 +1,8 @@
+/* shared/styles/mixins.scss */
+
+/* Пример миксина для центровки элементов */
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
