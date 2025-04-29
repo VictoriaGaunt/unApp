@@ -1,0 +1,100 @@
+/* Сброс и базовая настройка */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: rgba(255, 255, 255, 0);
+}
+
+/* Стили для body */
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* Фон по умолчанию */
+    background-color: #32063f;
+    background-image: url('/src/assets/img/head_bg.jpg');
+    background-repeat: repeat-x;
+    background-size: 100% auto;
+    background-position: top center;
+    background-position-y: 10px;
+}
+
+/* Стили для классов */
+.flex-column {
+    flex-direction: column !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+/* Стили для демо-режима */
+body.demo {
+    overflow-x: hidden;
+    background: #32063f url('/src/assets/img/bg_wide.jpg') repeat-y top center;
+    background-size: 100% auto;
+}
+
+body.demo.desktop.portrait {
+    background: #32063f url('/src/assets/img/bg_wide.jpg') no-repeat top center;
+    background-size: 100% 100%;
+}
+
+/* Медиа-запрос */
+@media (min-width: 768px) {
+    body.demo {
+        background: #32063f url('/src/assets/img/bg_wide.jpg') repeat-y top center;
+        background-size: 100% auto;
+    }
+}
+
+/* Переменные и настройки Bootstrap */
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    /* И так далее для остальных переменных... */
+}
+
+/* Пример стилей для кнопок */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
