@@ -1,0 +1,13 @@
+{
+  "welcome": "Добро пожаловать в My Awesome App!",
+  "login": {
+    "title": "Вход",
+    "emailLabel": "Электронная почта",
+    "passwordLabel": "Пароль",
+    "submit": "Войти",
+    "errorRequired": "Это поле обязательно."
+  },
+  "footer": {
+    "copyright": "Все права защищены."
+  }
+}

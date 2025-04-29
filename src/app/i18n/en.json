@@ -1,0 +1,13 @@
+{
+  "welcome": "Welcome to My Awesome App!",
+  "login": {
+    "title": "Login",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "submit": "Sign In",
+    "errorRequired": "This field is required."
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  }
+}

@@ -3,7 +3,7 @@ export * from './form';
 export * from './layout';
 export * from './navigation';
 export * from './modals';
-export * from './cards';
+export * from './charts';
 export * from './utilities';
 export * from './widgets';
 export * from './hooks';
