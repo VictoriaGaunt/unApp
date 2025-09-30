@@ -9,7 +9,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-      '@styles': path.resolve(__dirname, './src/shared/styles')
+      '@styles': path.resolve(__dirname, './src/styles')
     }
   },
   plugins: [vue(), ui()],
